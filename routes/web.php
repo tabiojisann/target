@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'targetController@index');
+Route::get('/', 'targetController@index')->name('target.index');
 
+Route::resource('/target', 'targetController')->except('index');
 
 
 
