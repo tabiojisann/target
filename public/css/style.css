@@ -18,9 +18,19 @@ h1 {
 ul {
   list-style: none;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 li {
-  margin-top: 26px;
+  margin-top: 68px;
+}
+
+textarea,button{
+  margin: 20 auto;
+  display: block;
+}
+
+label {
+  color: yellow;
+  margin-left: 452px;
 }
