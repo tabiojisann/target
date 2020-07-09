@@ -34,3 +34,10 @@ label {
   color: yellow;
   margin-left: 452px;
 }
+
+.test {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 500px;
+}

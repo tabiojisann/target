@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'targetController@index')->name('target.index');
 
+Route::get('/test', function() {
+  return view('target.test');
+})->name('target.test');
+
 Route::resource('/target', 'targetController')->except('index');
 
 
