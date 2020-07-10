@@ -16,7 +16,6 @@
        $Pokemon = ['ヒトカゲ', 'ゼニガメ', 'フシギダネ'];
          foreach( $Pokemon as $p)
          echo $p . " ";
-         endforeach
       ?>
     </div>
       <?php
