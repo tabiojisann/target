@@ -47,11 +47,13 @@
 
 
 
+
+
 <?php
-  $a = ['みた', 'あい', 'ところ'];
-  $b = ['ちんこ', 'ピクルづ', 'rちこちう'];
-  $merged = array_merge($a, $b);
-  var_dump($merged);
+  for ($i = 0; $i < 10; $i++) {
+    echo 'こんにちは';
+    echo '</br>';
+  } 
 ?>
  
 
