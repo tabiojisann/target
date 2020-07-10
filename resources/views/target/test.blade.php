@@ -23,8 +23,42 @@
 </html>
 
 <?php
-  
 
+
+  $x = -2;
+
+  if ($x > 0) {
+    if ($x % 2 === 0) {
+      echo '正の偶数';
+    } else {
+      echo '正の奇数';
+    }
+  } else if ($x < 0) {
+    if($x % 2 === 0) {
+      echo "負の偶数";
+    } else {
+      echo "負の奇数";
+    }
+  } else {
+    echo "ゼロ";
+  }
+
+?>
+
+
+
+
+
+<?php
+  for ($i = 0; $i < 10; $i++) {
+    echo 'こんにちは';
+    echo '</br>';
+  } 
+?>
+ 
+
+<?php
+  
 $type = [
   'フシギダネ'  => 'くさ',
   'フシギソウ'  => 'くさ',
@@ -180,6 +214,4 @@ $type = [
 ];
 
   echo $type['ミュウツー'] . PHP_EOL;
-  var_dump($type['カメックス']);
 
-  
