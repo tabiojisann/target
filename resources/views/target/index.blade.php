@@ -15,6 +15,8 @@
     <button type="submit">投稿</button><br>
   </form>
 
+  <a href="/test" class="test">テスト</a>
+
   @foreach($target as $t)  
     <div class="card">
       <form action="{{ action('targetController@destroy', $t->id) }}" id="form_{{ $t->id }}" method="post" style="display:inline">
