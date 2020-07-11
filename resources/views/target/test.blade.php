@@ -19,8 +19,7 @@
 </body>
 </html>
 
-<?php
-
+<!-- <?php
 
   function tall($X, $x, $Y, $y) {
         if ($x > $y) {
@@ -49,8 +48,8 @@
    
   $tall = tall($A, $a, $B, $b);
   // var_dump( tall($A, $a, $B, $b));
-  answer( $tall);
-?>
+  answer( $tall); 
+?> --->
 
 <?php
   
@@ -211,12 +210,14 @@ $pokemon = [
 
   // echo $pokemon['ミュウツー'] . PHP_EOL;
 
-  // foreach ($pokemon as $name => $type) {
-  //   echo $name;
-  //   echo '<br/>';  
-  // }
+  foreach ($pokemon as $name => $type) {
+    if($type !== 'エスパー') {
+      continue;
+    } 
+    echo $name;
+    echo '<br/>'; 
+  }
 
-  
-  
-  
+
+ 
 
