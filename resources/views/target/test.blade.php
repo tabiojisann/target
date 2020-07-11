@@ -51,6 +51,7 @@
   answer( $tall); 
 ?> --->
 
+
 <?php
   
 $pokemon = [
@@ -210,14 +211,16 @@ $pokemon = [
 
   // echo $pokemon['ミュウツー'] . PHP_EOL;
 
-  foreach ($pokemon as $name => $type) {
-    if($type !== 'エスパー') {
-      continue;
-    } 
-    echo $name;
-    echo '<br/>'; 
-  }
+  // foreach ($pokemon as $name => $type) {
+  //   if($type !== 'エスパー') {
+  //     continue;
+  //   } 
+  //   echo $name;
+  //   echo '<br/>'; 
+  // }
 
+  // var_dump($pokemon);
 
+  
  
 
