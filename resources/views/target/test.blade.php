@@ -14,49 +14,32 @@
          foreach( $Pokemon as $p)
          echo $p . " ";
       ?>
-
     </div>
   </div> 
-
-  <table border="1">
-    <?php 
-      for ($i = 1; $i < 10; $i++) {
-        for($j = 1; $j < 10; $j++) {
-          $x = $i * $j;
-          echo "($i)✖️($j)=($x)";
-          echo '<br/>'; 
-        } 
-      }
-    ?>
-  </table>
-  
 </body>
 </html>
 
 <?php
 
+  $array = [12, 33, 32, 87, -22, 61, 44, 65];
 
-  $x = -2;
+  $num = count($array);
 
-  if ($x > 0) {
-    if ($x % 2 === 0) {
-      echo '正の偶数';
-    } else {
-      echo '正の奇数';
+  $message = '含まれていません';
+
+  for ($i = 0; $i < $num; $i++) {
+    $value = $array[$i];
+    if ($value < 0) {
+      $message = '含まれてます';
+    break;
     }
-  } else if ($x < 0) {
-    if($x % 2 === 0) {
-      echo "負の偶数";
-    } else {
-      echo "負の奇数";
-    }
-  } else {
-    echo "ゼロ";
   }
+
+  echo $message;
+  
 
 ?>
 
- 
 
 <?php
   
