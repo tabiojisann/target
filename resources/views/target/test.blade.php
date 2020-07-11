@@ -21,20 +21,16 @@
 
 <?php
 
-  $array = [12, 33, 32, 87, -22, 61, 44, 65];
-
-  $message = '含まれてません';
-
-  foreach($array as $arr) {
-    if($arr < 0) {
-      $message = '含まれてます';
-    break;
-    }
+  function add($x, $y) {
+    $z = $x + $y;
+    return $z;
   }
 
-  echo $message;
-  
+  $sum = add(12, 11);
+  echo $sum
+
 ?>
+
 
 
 <?php
@@ -194,12 +190,12 @@ $pokemon = [
   'ミュウ' => 'エスパー'
 ];
 
-  echo $pokemon['ミュウツー'] . PHP_EOL;
+  // echo $pokemon['ミュウツー'] . PHP_EOL;
 
-  foreach ($pokemon as $name => $type) {
-    echo $name;
-    echo '<br/>';  
-  }
+  // foreach ($pokemon as $name => $type) {
+  //   echo $name;
+  //   echo '<br/>';  
+  // }
 
   
   
