@@ -20,21 +20,36 @@
 </html>
 
 <?php
-  function comparison($x, $y) {
-      if ($x > $y) {
-        echo $x . 'の方が大きい';
+
+
+  function tall($X, $x, $Y, $y) {
+        if ($x > $y) {
+        // echo $X . 'の方が大きい';
+        return $X;
       } else if ($x < $y) {
-        echo $y . 'の方が大きい';
+        // echo $Y . 'の方が大きい';
+        return $Y;
       } else {
-        echo 'どっちも一緒';
+        return 'どっちも一緒';
       }
   }
-  
-  $a = 24;
-  $b = 24;
 
-  comparison($a, $b);
-  
+  function answer($name) {
+    if ($name === 'どっちも一緒'){
+      echo 'どっちも一緒';
+    } else {
+      echo $name . 'の方が大きい';
+    }
+  }
+
+  $A = '河合俊一';
+  $B = 'ボブサップ';
+  $a = 195;
+  $b = 196;
+   
+  $tall = tall($A, $a, $B, $b);
+  // var_dump( tall($A, $a, $B, $b));
+  answer( $tall);
 ?>
 
 <?php
@@ -201,6 +216,7 @@ $pokemon = [
   //   echo '<br/>';  
   // }
 
+  
   
   
 
