@@ -20,7 +20,7 @@
 </html>
 
 <?php
-  function my_max($x, $y) {
+  function comparison($x, $y) {
       if ($x > $y) {
         echo $x . 'の方が大きい';
       } else if ($x < $y) {
@@ -33,9 +33,8 @@
   $a = 24;
   $b = 24;
 
-  $max = my_max($a, $b);
-  echo $max;
-
+  comparison($a, $b);
+  
 ?>
 
 <?php
