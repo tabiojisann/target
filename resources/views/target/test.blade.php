@@ -20,18 +20,23 @@
 </html>
 
 <?php
-
-  function add($x, $y) {
-    $z = $x + $y;
-    return $z;
+  function my_max($x, $y) {
+      if ($x > $y) {
+        echo $x . 'の方が大きい';
+      } else if ($x < $y) {
+        echo $y . 'の方が大きい';
+      } else {
+        echo 'どっちも一緒';
+      }
   }
+  
+  $a = 24;
+  $b = 24;
 
-  $sum = add(12, 11);
-  echo $sum
+  $max = my_max($a, $b);
+  echo $max;
 
 ?>
-
-
 
 <?php
   
