@@ -52,32 +52,39 @@
 ?> --->
 
 <?php
+ 
+  $emperor = [
+      [
+        'id' => 1,
+        'name' => 'シャンクス',
+        'nickname' => '赤髪',
+        'wanted' => 4048900000
+      ],
+      [
+        'id' => 2,
+        'name' => 'エドワード・ニューゲート',
+        'nickname' => '白髭',
+        'wanted' => 5046000000
+      ],
+      [
+        'id' => 3,
+        'name' => 'カイドウ',
+        'nickname' => '百獣',
+        'wanted' => 4611100000
+      ],
+      [
+        'id' => 4,
+        'name' => 'シャーロット・リンリン',
+        'nickname' => 'ビッグマム',
+        'wanted' => 4388000000
+      ],
 
-$records = array(
-  array(
-      'id' => 2135,
-      'first_name' => 'John',
-      'last_name' => 'Doe',
-  ),
-  array(
-      'id' => 3245,
-      'first_name' => 'Sally',
-      'last_name' => 'Smith',
-  ),
-  array(
-      'id' => 5342,
-      'first_name' => 'Jane',
-      'last_name' => 'Jones',
-  ),
-  array(
-      'id' => 5623,
-      'first_name' => 'Peter',
-      'last_name' => 'Doe',
-  )
-);
+    ];
 
-$first_names = array_column($records, 'id');
-var_dump($first_names);
+  $want = array_column($emperor, 'name', 'nickname');
+  
+  print_r($want);
+ 
 
 ?>
 
