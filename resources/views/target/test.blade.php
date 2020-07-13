@@ -51,42 +51,23 @@
   answer( $tall); 
 ?> --->
 
-<?php
- 
-  $emperor = [
-      [
-        'id' => 1,
-        'name' => 'シャンクス',
-        'nickname' => '赤髪',
-        'wanted' => 4048900000
-      ],
-      [
-        'id' => 2,
-        'name' => 'エドワード・ニューゲート',
-        'nickname' => '白髭',
-        'wanted' => 5046000000
-      ],
-      [
-        'id' => 3,
-        'name' => 'カイドウ',
-        'nickname' => '百獣',
-        'wanted' => 4611100000
-      ],
-      [
-        'id' => 4,
-        'name' => 'シャーロット・リンリン',
-        'nickname' => 'ビッグマム',
-        'wanted' => 4388000000
-      ],
-
-    ];
-
-  $want = array_column($emperor, 'name', 'nickname');
+<!-- <?php
   
-  print_r($want);
- 
-
-?>
+$text = "プログラミング言語PHP";
+// 部分一致
+if (preg_match("/プログラミング言語PHP/", $text)) {
+ echo "OK"."\n";
+} else {
+ echo "NG"."\n";
+}
+if (preg_match("/プログラミング言語Python/", $text)) {
+ echo "OK"."\n";
+} else {
+ echo "NG"."\n";
+}
+if (preg_match("/プログラミング言語/", $text)) {
+ echo "OK"."\n";
+}
 
 <?php
   
