@@ -52,12 +52,19 @@
 ?> --->
 
 <?php
-  preg_match('/computer/', 'computer', $matches);
-  print_r($matches);
+
+  $a = "Neverland Of Promise";
+  $b = "never";
+
+  if (preg_match("/\b$b\b/i", $a)) {
+    echo "OK";
+  } else {
+    echo "NG";
+  }
+  
 ?>
 
 <?php
-  
 $pokemon = [
   'フシギダネ'  => 'くさ',
   'フシギソウ'  => 'くさ',
