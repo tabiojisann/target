@@ -51,23 +51,10 @@
   answer( $tall); 
 ?> --->
 
-<!-- <?php
-  
-$text = "プログラミング言語PHP";
-// 部分一致
-if (preg_match("/プログラミング言語PHP/", $text)) {
- echo "OK"."\n";
-} else {
- echo "NG"."\n";
-}
-if (preg_match("/プログラミング言語Python/", $text)) {
- echo "OK"."\n";
-} else {
- echo "NG"."\n";
-}
-if (preg_match("/プログラミング言語/", $text)) {
- echo "OK"."\n";
-}
+<?php
+  preg_match('/computer/', 'computer', $matches);
+  print_r($matches);
+?>
 
 <?php
   
