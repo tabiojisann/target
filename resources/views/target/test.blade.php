@@ -1,3 +1,7 @@
+<?php
+  $a = 5
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -14,6 +18,11 @@
          foreach( $Pokemon as $p)
          echo $p . " ";
       ?>
+
+       @if($a === )
+        <h2>正解</h2>
+       @endif
+
     </div>
   </div> 
 </body>
@@ -50,20 +59,11 @@
   // var_dump( tall($A, $a, $B, $b));
   answer( $tall); 
 ?> --->
-
 <?php
 
-  $a = "Neverland Of Promise";
-  $b = "never";
 
-  if (preg_match("/\b$b\b/i", $a)) {
-    echo "OK";
-  } else {
-    echo "NG";
-  }
-  
+
 ?>
-
 <?php
 $pokemon = [
   'フシギダネ'  => 'くさ',
@@ -229,6 +229,8 @@ $pokemon = [
   //   echo $name;
   //   echo '<br/>'; 
   // }
+
+
 
   
 
